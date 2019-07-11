@@ -10,6 +10,7 @@ RUN apt-get update && \
     pip install --no-cache-dir Qt.py && \
     pip install --no-cache-dir pytest==4.6.4 pytest-cov anybadge pylint devpi-client && \
 
-    apt-get purge -y build-essentials cmake
+    apt-get purge -y build-essentials && \
+    apt-get purge -y cmake
 
 CMD ["bin/bash"]
