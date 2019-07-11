@@ -13,7 +13,7 @@ The containers are automatically updated when their base images do.
 # Pre-installed pip packages
 * PySide2
 * Qt.py
-* pytest
+* pytest==4.6.4
 * pytest-cov
 * pylint
 * devpi-client
