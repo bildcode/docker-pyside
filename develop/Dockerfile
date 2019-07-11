@@ -8,6 +8,8 @@ RUN apt-get update && \
     python -m pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir pyside && \
     pip install --no-cache-dir Qt.py && \
-    pip install --no-cache-dir pytest pytest-cov anybadge pylint devpi-client
+    pip install --no-cache-dir pytest pytest-cov anybadge pylint devpi-client && \
+
+    apt-get purge -y build-essentials cmake
 
 CMD ["bin/bash"]
