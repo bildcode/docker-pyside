@@ -11,8 +11,3 @@ RUN apt-get update && \
     pip install --no-cache-dir pytest pytest-cov anybadge pylint devpi-client
 
 CMD ["bin/bash"]
-
-apk update && apk upgrade && \
-    apk add --update alpine-sdk nano qt5-qtbase qt5-qttools-dev && \
-    rm -rf /var/cache/apk/*
-
