@@ -20,7 +20,7 @@ RUN apt-get update && \
     python -m pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir \
         anybadge \
-        devpi-client && \
+        devpi-client \
         flake8 \
         pylint \
         pyside \
